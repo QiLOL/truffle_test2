@@ -1,0 +1,292 @@
+{
+  "contractName": "IHasBalance",
+  "abi": [
+    {
+      "constant": true,
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "account",
+          "type": "address"
+        }
+      ],
+      "name": "balanceOf",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.5.16+commit.9c3226ce\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"constant\":true,\"inputs\":[{\"internalType\":\"address\",\"name\":\"account\",\"type\":\"address\"}],\"name\":\"balanceOf\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"/Users/qizhang/Development/truffle_test2/contracts/interfaces/IHasBalance.sol\":\"IHasBalance\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/Users/qizhang/Development/truffle_test2/contracts/interfaces/IHasBalance.sol\":{\"keccak256\":\"0xe7daf0c32da1170fe9fc232dc6a348a9c8d38222aa36c2fbb8759293574e80d7\",\"urls\":[\"bzz-raw://a8d4497499c0b83f16cd949617210226ae9e2e24a8ddbf40dfdad072e729a124\",\"dweb:/ipfs/QmRZAmQG6hfxUBrJe35FQ5zmwF1MdS4itXDXr6Bpdrqo6y\"]}},\"version\":1}",
+  "bytecode": "0x",
+  "deployedBytecode": "0x",
+  "sourceMap": "",
+  "deployedSourceMap": "",
+  "source": "pragma solidity >=0.4.24;\n\n\ninterface IHasBalance {\n    // Views\n    function balanceOf(address account) external view returns (uint);\n}\n",
+  "sourcePath": "/Users/qizhang/Development/truffle_test2/contracts/interfaces/IHasBalance.sol",
+  "ast": {
+    "absolutePath": "/Users/qizhang/Development/truffle_test2/contracts/interfaces/IHasBalance.sol",
+    "exportedSymbols": {
+      "IHasBalance": [
+        20650
+      ]
+    },
+    "id": 20651,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 20642,
+        "literals": [
+          "solidity",
+          ">=",
+          "0.4",
+          ".24"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:25:54"
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "documentation": null,
+        "fullyImplemented": false,
+        "id": 20650,
+        "linearizedBaseContracts": [
+          20650
+        ],
+        "name": "IHasBalance",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "body": null,
+            "documentation": null,
+            "id": 20649,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "balanceOf",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 20645,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 20644,
+                  "name": "account",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 20649,
+                  "src": "88:15:54",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 20643,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "88:7:54",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "87:17:54"
+            },
+            "returnParameters": {
+              "id": 20648,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 20647,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 20649,
+                  "src": "128:4:54",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 20646,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "128:4:54",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "127:6:54"
+            },
+            "scope": 20650,
+            "src": "69:65:54",
+            "stateMutability": "view",
+            "superFunction": null,
+            "visibility": "external"
+          }
+        ],
+        "scope": 20651,
+        "src": "28:108:54"
+      }
+    ],
+    "src": "0:137:54"
+  },
+  "legacyAST": {
+    "absolutePath": "/Users/qizhang/Development/truffle_test2/contracts/interfaces/IHasBalance.sol",
+    "exportedSymbols": {
+      "IHasBalance": [
+        20650
+      ]
+    },
+    "id": 20651,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 20642,
+        "literals": [
+          "solidity",
+          ">=",
+          "0.4",
+          ".24"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:25:54"
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "documentation": null,
+        "fullyImplemented": false,
+        "id": 20650,
+        "linearizedBaseContracts": [
+          20650
+        ],
+        "name": "IHasBalance",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "body": null,
+            "documentation": null,
+            "id": 20649,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "balanceOf",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 20645,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 20644,
+                  "name": "account",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 20649,
+                  "src": "88:15:54",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 20643,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "88:7:54",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "87:17:54"
+            },
+            "returnParameters": {
+              "id": 20648,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 20647,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 20649,
+                  "src": "128:4:54",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 20646,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "128:4:54",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "127:6:54"
+            },
+            "scope": 20650,
+            "src": "69:65:54",
+            "stateMutability": "view",
+            "superFunction": null,
+            "visibility": "external"
+          }
+        ],
+        "scope": 20651,
+        "src": "28:108:54"
+      }
+    ],
+    "src": "0:137:54"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.5.16+commit.9c3226ce.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.2.1",
+  "updatedAt": "2020-07-05T03:58:13.147Z",
+  "devdoc": {
+    "methods": {}
+  },
+  "userdoc": {
+    "methods": {}
+  }
+}

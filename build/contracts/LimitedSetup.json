@@ -1,0 +1,743 @@
+{
+  "contractName": "LimitedSetup",
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "setupDuration",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "constructor"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "setupExpiryTime",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.5.16+commit.9c3226ce\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"setupDuration\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"constructor\"},{\"constant\":true,\"inputs\":[],\"name\":\"setupExpiryTime\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"methods\":{\"constructor\":{\"details\":\"LimitedSetup Constructor.\",\"params\":{\"setupDuration\":\"The time the setup period will last for.\"}}}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"/Users/qizhang/Development/truffle_test2/contracts/LimitedSetup.sol\":\"LimitedSetup\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/Users/qizhang/Development/truffle_test2/contracts/LimitedSetup.sol\":{\"keccak256\":\"0x91941176c82f14602517d29179805f3cc30961be74135760cc35bf5088f06574\",\"urls\":[\"bzz-raw://c7dd8d2c2adb5d5455b05b0a662dbecf2a9ae94290cc648bcb15bc62845bb7fb\",\"dweb:/ipfs/QmUYA6K9c4cAVwZu6YqjM1ztccRkpz21j2zqVM5KN1tAwq\"]}},\"version\":1}",
+  "bytecode": "0x",
+  "deployedBytecode": "0x",
+  "sourceMap": "",
+  "deployedSourceMap": "",
+  "source": "pragma solidity ^0.5.16;\n\n\n// https://docs.synthetix.io/contracts/LimitedSetup\ncontract LimitedSetup {\n    uint public setupExpiryTime;\n\n    /**\n     * @dev LimitedSetup Constructor.\n     * @param setupDuration The time the setup period will last for.\n     */\n    constructor(uint setupDuration) internal {\n        setupExpiryTime = now + setupDuration;\n    }\n\n    modifier onlyDuringSetup {\n        require(now < setupExpiryTime, \"Can only perform this action during setup\");\n        _;\n    }\n}\n",
+  "sourcePath": "/Users/qizhang/Development/truffle_test2/contracts/LimitedSetup.sol",
+  "ast": {
+    "absolutePath": "/Users/qizhang/Development/truffle_test2/contracts/LimitedSetup.sol",
+    "exportedSymbols": {
+      "LimitedSetup": [
+        11983
+      ]
+    },
+    "id": 11984,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 11957,
+        "literals": [
+          "solidity",
+          "^",
+          "0.5",
+          ".16"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:24:16"
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 11983,
+        "linearizedBaseContracts": [
+          11983
+        ],
+        "name": "LimitedSetup",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "constant": false,
+            "id": 11959,
+            "name": "setupExpiryTime",
+            "nodeType": "VariableDeclaration",
+            "scope": 11983,
+            "src": "107:27:16",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint256",
+              "typeString": "uint256"
+            },
+            "typeName": {
+              "id": 11958,
+              "name": "uint",
+              "nodeType": "ElementaryTypeName",
+              "src": "107:4:16",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              }
+            },
+            "value": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 11970,
+              "nodeType": "Block",
+              "src": "305:54:16",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 11968,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "id": 11964,
+                      "name": "setupExpiryTime",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 11959,
+                      "src": "315:15:16",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "commonType": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      },
+                      "id": 11967,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "leftExpression": {
+                        "argumentTypes": null,
+                        "id": 11965,
+                        "name": "now",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 21574,
+                        "src": "333:3:16",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      },
+                      "nodeType": "BinaryOperation",
+                      "operator": "+",
+                      "rightExpression": {
+                        "argumentTypes": null,
+                        "id": 11966,
+                        "name": "setupDuration",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 11961,
+                        "src": "339:13:16",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      },
+                      "src": "333:19:16",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "src": "315:37:16",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "id": 11969,
+                  "nodeType": "ExpressionStatement",
+                  "src": "315:37:16"
+                }
+              ]
+            },
+            "documentation": "@dev LimitedSetup Constructor.\n@param setupDuration The time the setup period will last for.",
+            "id": 11971,
+            "implemented": true,
+            "kind": "constructor",
+            "modifiers": [],
+            "name": "",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 11962,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 11961,
+                  "name": "setupDuration",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 11971,
+                  "src": "276:18:16",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 11960,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "276:4:16",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "275:20:16"
+            },
+            "returnParameters": {
+              "id": 11963,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "305:0:16"
+            },
+            "scope": 11983,
+            "src": "264:95:16",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "internal"
+          },
+          {
+            "body": {
+              "id": 11981,
+              "nodeType": "Block",
+              "src": "390:103:16",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "arguments": [
+                      {
+                        "argumentTypes": null,
+                        "commonType": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        },
+                        "id": 11976,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "leftExpression": {
+                          "argumentTypes": null,
+                          "id": 11974,
+                          "name": "now",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 21574,
+                          "src": "408:3:16",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_uint256",
+                            "typeString": "uint256"
+                          }
+                        },
+                        "nodeType": "BinaryOperation",
+                        "operator": "<",
+                        "rightExpression": {
+                          "argumentTypes": null,
+                          "id": 11975,
+                          "name": "setupExpiryTime",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 11959,
+                          "src": "414:15:16",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_uint256",
+                            "typeString": "uint256"
+                          }
+                        },
+                        "src": "408:21:16",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_bool",
+                          "typeString": "bool"
+                        }
+                      },
+                      {
+                        "argumentTypes": null,
+                        "hexValue": "43616e206f6e6c7920706572666f726d207468697320616374696f6e20647572696e67207365747570",
+                        "id": 11977,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "kind": "string",
+                        "lValueRequested": false,
+                        "nodeType": "Literal",
+                        "src": "431:43:16",
+                        "subdenomination": null,
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_stringliteral_a418edadcbfab992c2a2bdda93ff9319f4d7320cd12735e59f0b4f8729b7a372",
+                          "typeString": "literal_string \"Can only perform this action during setup\""
+                        },
+                        "value": "Can only perform this action during setup"
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_bool",
+                          "typeString": "bool"
+                        },
+                        {
+                          "typeIdentifier": "t_stringliteral_a418edadcbfab992c2a2bdda93ff9319f4d7320cd12735e59f0b4f8729b7a372",
+                          "typeString": "literal_string \"Can only perform this action during setup\""
+                        }
+                      ],
+                      "id": 11973,
+                      "name": "require",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [
+                        21575,
+                        21576
+                      ],
+                      "referencedDeclaration": 21576,
+                      "src": "400:7:16",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_require_pure$_t_bool_$_t_string_memory_ptr_$returns$__$",
+                        "typeString": "function (bool,string memory) pure"
+                      }
+                    },
+                    "id": 11978,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "400:75:16",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 11979,
+                  "nodeType": "ExpressionStatement",
+                  "src": "400:75:16"
+                },
+                {
+                  "id": 11980,
+                  "nodeType": "PlaceholderStatement",
+                  "src": "485:1:16"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 11982,
+            "name": "onlyDuringSetup",
+            "nodeType": "ModifierDefinition",
+            "parameters": {
+              "id": 11972,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "390:0:16"
+            },
+            "src": "365:128:16",
+            "visibility": "internal"
+          }
+        ],
+        "scope": 11984,
+        "src": "79:416:16"
+      }
+    ],
+    "src": "0:496:16"
+  },
+  "legacyAST": {
+    "absolutePath": "/Users/qizhang/Development/truffle_test2/contracts/LimitedSetup.sol",
+    "exportedSymbols": {
+      "LimitedSetup": [
+        11983
+      ]
+    },
+    "id": 11984,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 11957,
+        "literals": [
+          "solidity",
+          "^",
+          "0.5",
+          ".16"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:24:16"
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 11983,
+        "linearizedBaseContracts": [
+          11983
+        ],
+        "name": "LimitedSetup",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "constant": false,
+            "id": 11959,
+            "name": "setupExpiryTime",
+            "nodeType": "VariableDeclaration",
+            "scope": 11983,
+            "src": "107:27:16",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint256",
+              "typeString": "uint256"
+            },
+            "typeName": {
+              "id": 11958,
+              "name": "uint",
+              "nodeType": "ElementaryTypeName",
+              "src": "107:4:16",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              }
+            },
+            "value": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 11970,
+              "nodeType": "Block",
+              "src": "305:54:16",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 11968,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "id": 11964,
+                      "name": "setupExpiryTime",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 11959,
+                      "src": "315:15:16",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "commonType": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      },
+                      "id": 11967,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "leftExpression": {
+                        "argumentTypes": null,
+                        "id": 11965,
+                        "name": "now",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 21574,
+                        "src": "333:3:16",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      },
+                      "nodeType": "BinaryOperation",
+                      "operator": "+",
+                      "rightExpression": {
+                        "argumentTypes": null,
+                        "id": 11966,
+                        "name": "setupDuration",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 11961,
+                        "src": "339:13:16",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      },
+                      "src": "333:19:16",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "src": "315:37:16",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "id": 11969,
+                  "nodeType": "ExpressionStatement",
+                  "src": "315:37:16"
+                }
+              ]
+            },
+            "documentation": "@dev LimitedSetup Constructor.\n@param setupDuration The time the setup period will last for.",
+            "id": 11971,
+            "implemented": true,
+            "kind": "constructor",
+            "modifiers": [],
+            "name": "",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 11962,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 11961,
+                  "name": "setupDuration",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 11971,
+                  "src": "276:18:16",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 11960,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "276:4:16",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "275:20:16"
+            },
+            "returnParameters": {
+              "id": 11963,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "305:0:16"
+            },
+            "scope": 11983,
+            "src": "264:95:16",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "internal"
+          },
+          {
+            "body": {
+              "id": 11981,
+              "nodeType": "Block",
+              "src": "390:103:16",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "arguments": [
+                      {
+                        "argumentTypes": null,
+                        "commonType": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        },
+                        "id": 11976,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "leftExpression": {
+                          "argumentTypes": null,
+                          "id": 11974,
+                          "name": "now",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 21574,
+                          "src": "408:3:16",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_uint256",
+                            "typeString": "uint256"
+                          }
+                        },
+                        "nodeType": "BinaryOperation",
+                        "operator": "<",
+                        "rightExpression": {
+                          "argumentTypes": null,
+                          "id": 11975,
+                          "name": "setupExpiryTime",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 11959,
+                          "src": "414:15:16",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_uint256",
+                            "typeString": "uint256"
+                          }
+                        },
+                        "src": "408:21:16",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_bool",
+                          "typeString": "bool"
+                        }
+                      },
+                      {
+                        "argumentTypes": null,
+                        "hexValue": "43616e206f6e6c7920706572666f726d207468697320616374696f6e20647572696e67207365747570",
+                        "id": 11977,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "kind": "string",
+                        "lValueRequested": false,
+                        "nodeType": "Literal",
+                        "src": "431:43:16",
+                        "subdenomination": null,
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_stringliteral_a418edadcbfab992c2a2bdda93ff9319f4d7320cd12735e59f0b4f8729b7a372",
+                          "typeString": "literal_string \"Can only perform this action during setup\""
+                        },
+                        "value": "Can only perform this action during setup"
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_bool",
+                          "typeString": "bool"
+                        },
+                        {
+                          "typeIdentifier": "t_stringliteral_a418edadcbfab992c2a2bdda93ff9319f4d7320cd12735e59f0b4f8729b7a372",
+                          "typeString": "literal_string \"Can only perform this action during setup\""
+                        }
+                      ],
+                      "id": 11973,
+                      "name": "require",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [
+                        21575,
+                        21576
+                      ],
+                      "referencedDeclaration": 21576,
+                      "src": "400:7:16",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_require_pure$_t_bool_$_t_string_memory_ptr_$returns$__$",
+                        "typeString": "function (bool,string memory) pure"
+                      }
+                    },
+                    "id": 11978,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "400:75:16",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 11979,
+                  "nodeType": "ExpressionStatement",
+                  "src": "400:75:16"
+                },
+                {
+                  "id": 11980,
+                  "nodeType": "PlaceholderStatement",
+                  "src": "485:1:16"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 11982,
+            "name": "onlyDuringSetup",
+            "nodeType": "ModifierDefinition",
+            "parameters": {
+              "id": 11972,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "390:0:16"
+            },
+            "src": "365:128:16",
+            "visibility": "internal"
+          }
+        ],
+        "scope": 11984,
+        "src": "79:416:16"
+      }
+    ],
+    "src": "0:496:16"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.5.16+commit.9c3226ce.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.2.1",
+  "updatedAt": "2020-07-05T03:58:12.983Z",
+  "devdoc": {
+    "methods": {
+      "constructor": {
+        "details": "LimitedSetup Constructor.",
+        "params": {
+          "setupDuration": "The time the setup period will last for."
+        }
+      }
+    }
+  },
+  "userdoc": {
+    "methods": {}
+  }
+}

@@ -1,0 +1,2333 @@
+{
+  "contractName": "IDelegateApprovals",
+  "abi": [
+    {
+      "constant": true,
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "authoriser",
+          "type": "address"
+        },
+        {
+          "internalType": "address",
+          "name": "delegate",
+          "type": "address"
+        }
+      ],
+      "name": "canBurnFor",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "authoriser",
+          "type": "address"
+        },
+        {
+          "internalType": "address",
+          "name": "delegate",
+          "type": "address"
+        }
+      ],
+      "name": "canIssueFor",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "authoriser",
+          "type": "address"
+        },
+        {
+          "internalType": "address",
+          "name": "delegate",
+          "type": "address"
+        }
+      ],
+      "name": "canClaimFor",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "authoriser",
+          "type": "address"
+        },
+        {
+          "internalType": "address",
+          "name": "delegate",
+          "type": "address"
+        }
+      ],
+      "name": "canExchangeFor",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "delegate",
+          "type": "address"
+        }
+      ],
+      "name": "approveAllDelegatePowers",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "delegate",
+          "type": "address"
+        }
+      ],
+      "name": "removeAllDelegatePowers",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "delegate",
+          "type": "address"
+        }
+      ],
+      "name": "approveBurnOnBehalf",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "delegate",
+          "type": "address"
+        }
+      ],
+      "name": "removeBurnOnBehalf",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "delegate",
+          "type": "address"
+        }
+      ],
+      "name": "approveIssueOnBehalf",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "delegate",
+          "type": "address"
+        }
+      ],
+      "name": "removeIssueOnBehalf",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "delegate",
+          "type": "address"
+        }
+      ],
+      "name": "approveClaimOnBehalf",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "delegate",
+          "type": "address"
+        }
+      ],
+      "name": "removeClaimOnBehalf",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "delegate",
+          "type": "address"
+        }
+      ],
+      "name": "approveExchangeOnBehalf",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "delegate",
+          "type": "address"
+        }
+      ],
+      "name": "removeExchangeOnBehalf",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.5.16+commit.9c3226ce\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"constant\":false,\"inputs\":[{\"internalType\":\"address\",\"name\":\"delegate\",\"type\":\"address\"}],\"name\":\"approveAllDelegatePowers\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"internalType\":\"address\",\"name\":\"delegate\",\"type\":\"address\"}],\"name\":\"approveBurnOnBehalf\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"internalType\":\"address\",\"name\":\"delegate\",\"type\":\"address\"}],\"name\":\"approveClaimOnBehalf\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"internalType\":\"address\",\"name\":\"delegate\",\"type\":\"address\"}],\"name\":\"approveExchangeOnBehalf\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"internalType\":\"address\",\"name\":\"delegate\",\"type\":\"address\"}],\"name\":\"approveIssueOnBehalf\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[{\"internalType\":\"address\",\"name\":\"authoriser\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"delegate\",\"type\":\"address\"}],\"name\":\"canBurnFor\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[{\"internalType\":\"address\",\"name\":\"authoriser\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"delegate\",\"type\":\"address\"}],\"name\":\"canClaimFor\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[{\"internalType\":\"address\",\"name\":\"authoriser\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"delegate\",\"type\":\"address\"}],\"name\":\"canExchangeFor\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[{\"internalType\":\"address\",\"name\":\"authoriser\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"delegate\",\"type\":\"address\"}],\"name\":\"canIssueFor\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"internalType\":\"address\",\"name\":\"delegate\",\"type\":\"address\"}],\"name\":\"removeAllDelegatePowers\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"internalType\":\"address\",\"name\":\"delegate\",\"type\":\"address\"}],\"name\":\"removeBurnOnBehalf\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"internalType\":\"address\",\"name\":\"delegate\",\"type\":\"address\"}],\"name\":\"removeClaimOnBehalf\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"internalType\":\"address\",\"name\":\"delegate\",\"type\":\"address\"}],\"name\":\"removeExchangeOnBehalf\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"internalType\":\"address\",\"name\":\"delegate\",\"type\":\"address\"}],\"name\":\"removeIssueOnBehalf\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"/Users/qizhang/Development/truffle_test2/contracts/interfaces/IDelegateApprovals.sol\":\"IDelegateApprovals\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/Users/qizhang/Development/truffle_test2/contracts/interfaces/IDelegateApprovals.sol\":{\"keccak256\":\"0x6854bf1ae018610197bb912fb10b7537b8bf199210c9fd0ead8e735a8929cc27\",\"urls\":[\"bzz-raw://55b9410096b753a938a52e3b1f1159f50e6c2d347ae2625faf4a6f17f8a6ecdb\",\"dweb:/ipfs/QmbRYgXASZSsLkz7M4nLF6Ng8hijh4EqcRVf8aGQM7pDYC\"]}},\"version\":1}",
+  "bytecode": "0x",
+  "deployedBytecode": "0x",
+  "sourceMap": "",
+  "deployedSourceMap": "",
+  "source": "pragma solidity >=0.4.24;\n\n\ninterface IDelegateApprovals {\n    // Views\n    function canBurnFor(address authoriser, address delegate) external view returns (bool);\n\n    function canIssueFor(address authoriser, address delegate) external view returns (bool);\n\n    function canClaimFor(address authoriser, address delegate) external view returns (bool);\n\n    function canExchangeFor(address authoriser, address delegate) external view returns (bool);\n\n    // Mutative\n    function approveAllDelegatePowers(address delegate) external;\n\n    function removeAllDelegatePowers(address delegate) external;\n\n    function approveBurnOnBehalf(address delegate) external;\n\n    function removeBurnOnBehalf(address delegate) external;\n\n    function approveIssueOnBehalf(address delegate) external;\n\n    function removeIssueOnBehalf(address delegate) external;\n\n    function approveClaimOnBehalf(address delegate) external;\n\n    function removeClaimOnBehalf(address delegate) external;\n\n    function approveExchangeOnBehalf(address delegate) external;\n\n    function removeExchangeOnBehalf(address delegate) external;\n}\n",
+  "sourcePath": "/Users/qizhang/Development/truffle_test2/contracts/interfaces/IDelegateApprovals.sol",
+  "ast": {
+    "absolutePath": "/Users/qizhang/Development/truffle_test2/contracts/interfaces/IDelegateApprovals.sol",
+    "exportedSymbols": {
+      "IDelegateApprovals": [
+        19988
+      ]
+    },
+    "id": 19989,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 19901,
+        "literals": [
+          "solidity",
+          ">=",
+          "0.4",
+          ".24"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:25:46"
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "documentation": null,
+        "fullyImplemented": false,
+        "id": 19988,
+        "linearizedBaseContracts": [
+          19988
+        ],
+        "name": "IDelegateApprovals",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "body": null,
+            "documentation": null,
+            "id": 19910,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "canBurnFor",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 19906,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 19903,
+                  "name": "authoriser",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 19910,
+                  "src": "96:18:46",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 19902,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "96:7:46",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 19905,
+                  "name": "delegate",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 19910,
+                  "src": "116:16:46",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 19904,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "116:7:46",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "95:38:46"
+            },
+            "returnParameters": {
+              "id": 19909,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 19908,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 19910,
+                  "src": "157:4:46",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bool",
+                    "typeString": "bool"
+                  },
+                  "typeName": {
+                    "id": 19907,
+                    "name": "bool",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "157:4:46",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "156:6:46"
+            },
+            "scope": 19988,
+            "src": "76:87:46",
+            "stateMutability": "view",
+            "superFunction": null,
+            "visibility": "external"
+          },
+          {
+            "body": null,
+            "documentation": null,
+            "id": 19919,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "canIssueFor",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 19915,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 19912,
+                  "name": "authoriser",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 19919,
+                  "src": "190:18:46",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 19911,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "190:7:46",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 19914,
+                  "name": "delegate",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 19919,
+                  "src": "210:16:46",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 19913,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "210:7:46",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "189:38:46"
+            },
+            "returnParameters": {
+              "id": 19918,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 19917,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 19919,
+                  "src": "251:4:46",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bool",
+                    "typeString": "bool"
+                  },
+                  "typeName": {
+                    "id": 19916,
+                    "name": "bool",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "251:4:46",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "250:6:46"
+            },
+            "scope": 19988,
+            "src": "169:88:46",
+            "stateMutability": "view",
+            "superFunction": null,
+            "visibility": "external"
+          },
+          {
+            "body": null,
+            "documentation": null,
+            "id": 19928,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "canClaimFor",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 19924,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 19921,
+                  "name": "authoriser",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 19928,
+                  "src": "284:18:46",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 19920,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "284:7:46",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 19923,
+                  "name": "delegate",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 19928,
+                  "src": "304:16:46",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 19922,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "304:7:46",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "283:38:46"
+            },
+            "returnParameters": {
+              "id": 19927,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 19926,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 19928,
+                  "src": "345:4:46",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bool",
+                    "typeString": "bool"
+                  },
+                  "typeName": {
+                    "id": 19925,
+                    "name": "bool",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "345:4:46",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "344:6:46"
+            },
+            "scope": 19988,
+            "src": "263:88:46",
+            "stateMutability": "view",
+            "superFunction": null,
+            "visibility": "external"
+          },
+          {
+            "body": null,
+            "documentation": null,
+            "id": 19937,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "canExchangeFor",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 19933,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 19930,
+                  "name": "authoriser",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 19937,
+                  "src": "381:18:46",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 19929,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "381:7:46",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 19932,
+                  "name": "delegate",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 19937,
+                  "src": "401:16:46",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 19931,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "401:7:46",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "380:38:46"
+            },
+            "returnParameters": {
+              "id": 19936,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 19935,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 19937,
+                  "src": "442:4:46",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bool",
+                    "typeString": "bool"
+                  },
+                  "typeName": {
+                    "id": 19934,
+                    "name": "bool",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "442:4:46",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "441:6:46"
+            },
+            "scope": 19988,
+            "src": "357:91:46",
+            "stateMutability": "view",
+            "superFunction": null,
+            "visibility": "external"
+          },
+          {
+            "body": null,
+            "documentation": null,
+            "id": 19942,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "approveAllDelegatePowers",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 19940,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 19939,
+                  "name": "delegate",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 19942,
+                  "src": "504:16:46",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 19938,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "504:7:46",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "503:18:46"
+            },
+            "returnParameters": {
+              "id": 19941,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "530:0:46"
+            },
+            "scope": 19988,
+            "src": "470:61:46",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "external"
+          },
+          {
+            "body": null,
+            "documentation": null,
+            "id": 19947,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "removeAllDelegatePowers",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 19945,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 19944,
+                  "name": "delegate",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 19947,
+                  "src": "570:16:46",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 19943,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "570:7:46",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "569:18:46"
+            },
+            "returnParameters": {
+              "id": 19946,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "596:0:46"
+            },
+            "scope": 19988,
+            "src": "537:60:46",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "external"
+          },
+          {
+            "body": null,
+            "documentation": null,
+            "id": 19952,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "approveBurnOnBehalf",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 19950,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 19949,
+                  "name": "delegate",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 19952,
+                  "src": "632:16:46",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 19948,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "632:7:46",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "631:18:46"
+            },
+            "returnParameters": {
+              "id": 19951,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "658:0:46"
+            },
+            "scope": 19988,
+            "src": "603:56:46",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "external"
+          },
+          {
+            "body": null,
+            "documentation": null,
+            "id": 19957,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "removeBurnOnBehalf",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 19955,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 19954,
+                  "name": "delegate",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 19957,
+                  "src": "693:16:46",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 19953,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "693:7:46",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "692:18:46"
+            },
+            "returnParameters": {
+              "id": 19956,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "719:0:46"
+            },
+            "scope": 19988,
+            "src": "665:55:46",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "external"
+          },
+          {
+            "body": null,
+            "documentation": null,
+            "id": 19962,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "approveIssueOnBehalf",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 19960,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 19959,
+                  "name": "delegate",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 19962,
+                  "src": "756:16:46",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 19958,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "756:7:46",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "755:18:46"
+            },
+            "returnParameters": {
+              "id": 19961,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "782:0:46"
+            },
+            "scope": 19988,
+            "src": "726:57:46",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "external"
+          },
+          {
+            "body": null,
+            "documentation": null,
+            "id": 19967,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "removeIssueOnBehalf",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 19965,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 19964,
+                  "name": "delegate",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 19967,
+                  "src": "818:16:46",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 19963,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "818:7:46",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "817:18:46"
+            },
+            "returnParameters": {
+              "id": 19966,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "844:0:46"
+            },
+            "scope": 19988,
+            "src": "789:56:46",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "external"
+          },
+          {
+            "body": null,
+            "documentation": null,
+            "id": 19972,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "approveClaimOnBehalf",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 19970,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 19969,
+                  "name": "delegate",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 19972,
+                  "src": "881:16:46",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 19968,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "881:7:46",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "880:18:46"
+            },
+            "returnParameters": {
+              "id": 19971,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "907:0:46"
+            },
+            "scope": 19988,
+            "src": "851:57:46",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "external"
+          },
+          {
+            "body": null,
+            "documentation": null,
+            "id": 19977,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "removeClaimOnBehalf",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 19975,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 19974,
+                  "name": "delegate",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 19977,
+                  "src": "943:16:46",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 19973,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "943:7:46",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "942:18:46"
+            },
+            "returnParameters": {
+              "id": 19976,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "969:0:46"
+            },
+            "scope": 19988,
+            "src": "914:56:46",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "external"
+          },
+          {
+            "body": null,
+            "documentation": null,
+            "id": 19982,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "approveExchangeOnBehalf",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 19980,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 19979,
+                  "name": "delegate",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 19982,
+                  "src": "1009:16:46",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 19978,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1009:7:46",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1008:18:46"
+            },
+            "returnParameters": {
+              "id": 19981,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "1035:0:46"
+            },
+            "scope": 19988,
+            "src": "976:60:46",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "external"
+          },
+          {
+            "body": null,
+            "documentation": null,
+            "id": 19987,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "removeExchangeOnBehalf",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 19985,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 19984,
+                  "name": "delegate",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 19987,
+                  "src": "1074:16:46",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 19983,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1074:7:46",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1073:18:46"
+            },
+            "returnParameters": {
+              "id": 19986,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "1100:0:46"
+            },
+            "scope": 19988,
+            "src": "1042:59:46",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "external"
+          }
+        ],
+        "scope": 19989,
+        "src": "28:1075:46"
+      }
+    ],
+    "src": "0:1104:46"
+  },
+  "legacyAST": {
+    "absolutePath": "/Users/qizhang/Development/truffle_test2/contracts/interfaces/IDelegateApprovals.sol",
+    "exportedSymbols": {
+      "IDelegateApprovals": [
+        19988
+      ]
+    },
+    "id": 19989,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 19901,
+        "literals": [
+          "solidity",
+          ">=",
+          "0.4",
+          ".24"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:25:46"
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "documentation": null,
+        "fullyImplemented": false,
+        "id": 19988,
+        "linearizedBaseContracts": [
+          19988
+        ],
+        "name": "IDelegateApprovals",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "body": null,
+            "documentation": null,
+            "id": 19910,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "canBurnFor",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 19906,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 19903,
+                  "name": "authoriser",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 19910,
+                  "src": "96:18:46",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 19902,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "96:7:46",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 19905,
+                  "name": "delegate",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 19910,
+                  "src": "116:16:46",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 19904,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "116:7:46",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "95:38:46"
+            },
+            "returnParameters": {
+              "id": 19909,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 19908,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 19910,
+                  "src": "157:4:46",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bool",
+                    "typeString": "bool"
+                  },
+                  "typeName": {
+                    "id": 19907,
+                    "name": "bool",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "157:4:46",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "156:6:46"
+            },
+            "scope": 19988,
+            "src": "76:87:46",
+            "stateMutability": "view",
+            "superFunction": null,
+            "visibility": "external"
+          },
+          {
+            "body": null,
+            "documentation": null,
+            "id": 19919,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "canIssueFor",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 19915,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 19912,
+                  "name": "authoriser",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 19919,
+                  "src": "190:18:46",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 19911,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "190:7:46",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 19914,
+                  "name": "delegate",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 19919,
+                  "src": "210:16:46",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 19913,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "210:7:46",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "189:38:46"
+            },
+            "returnParameters": {
+              "id": 19918,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 19917,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 19919,
+                  "src": "251:4:46",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bool",
+                    "typeString": "bool"
+                  },
+                  "typeName": {
+                    "id": 19916,
+                    "name": "bool",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "251:4:46",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "250:6:46"
+            },
+            "scope": 19988,
+            "src": "169:88:46",
+            "stateMutability": "view",
+            "superFunction": null,
+            "visibility": "external"
+          },
+          {
+            "body": null,
+            "documentation": null,
+            "id": 19928,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "canClaimFor",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 19924,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 19921,
+                  "name": "authoriser",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 19928,
+                  "src": "284:18:46",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 19920,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "284:7:46",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 19923,
+                  "name": "delegate",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 19928,
+                  "src": "304:16:46",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 19922,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "304:7:46",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "283:38:46"
+            },
+            "returnParameters": {
+              "id": 19927,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 19926,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 19928,
+                  "src": "345:4:46",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bool",
+                    "typeString": "bool"
+                  },
+                  "typeName": {
+                    "id": 19925,
+                    "name": "bool",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "345:4:46",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "344:6:46"
+            },
+            "scope": 19988,
+            "src": "263:88:46",
+            "stateMutability": "view",
+            "superFunction": null,
+            "visibility": "external"
+          },
+          {
+            "body": null,
+            "documentation": null,
+            "id": 19937,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "canExchangeFor",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 19933,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 19930,
+                  "name": "authoriser",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 19937,
+                  "src": "381:18:46",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 19929,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "381:7:46",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 19932,
+                  "name": "delegate",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 19937,
+                  "src": "401:16:46",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 19931,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "401:7:46",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "380:38:46"
+            },
+            "returnParameters": {
+              "id": 19936,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 19935,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 19937,
+                  "src": "442:4:46",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bool",
+                    "typeString": "bool"
+                  },
+                  "typeName": {
+                    "id": 19934,
+                    "name": "bool",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "442:4:46",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "441:6:46"
+            },
+            "scope": 19988,
+            "src": "357:91:46",
+            "stateMutability": "view",
+            "superFunction": null,
+            "visibility": "external"
+          },
+          {
+            "body": null,
+            "documentation": null,
+            "id": 19942,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "approveAllDelegatePowers",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 19940,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 19939,
+                  "name": "delegate",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 19942,
+                  "src": "504:16:46",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 19938,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "504:7:46",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "503:18:46"
+            },
+            "returnParameters": {
+              "id": 19941,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "530:0:46"
+            },
+            "scope": 19988,
+            "src": "470:61:46",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "external"
+          },
+          {
+            "body": null,
+            "documentation": null,
+            "id": 19947,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "removeAllDelegatePowers",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 19945,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 19944,
+                  "name": "delegate",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 19947,
+                  "src": "570:16:46",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 19943,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "570:7:46",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "569:18:46"
+            },
+            "returnParameters": {
+              "id": 19946,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "596:0:46"
+            },
+            "scope": 19988,
+            "src": "537:60:46",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "external"
+          },
+          {
+            "body": null,
+            "documentation": null,
+            "id": 19952,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "approveBurnOnBehalf",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 19950,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 19949,
+                  "name": "delegate",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 19952,
+                  "src": "632:16:46",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 19948,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "632:7:46",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "631:18:46"
+            },
+            "returnParameters": {
+              "id": 19951,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "658:0:46"
+            },
+            "scope": 19988,
+            "src": "603:56:46",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "external"
+          },
+          {
+            "body": null,
+            "documentation": null,
+            "id": 19957,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "removeBurnOnBehalf",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 19955,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 19954,
+                  "name": "delegate",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 19957,
+                  "src": "693:16:46",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 19953,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "693:7:46",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "692:18:46"
+            },
+            "returnParameters": {
+              "id": 19956,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "719:0:46"
+            },
+            "scope": 19988,
+            "src": "665:55:46",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "external"
+          },
+          {
+            "body": null,
+            "documentation": null,
+            "id": 19962,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "approveIssueOnBehalf",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 19960,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 19959,
+                  "name": "delegate",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 19962,
+                  "src": "756:16:46",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 19958,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "756:7:46",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "755:18:46"
+            },
+            "returnParameters": {
+              "id": 19961,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "782:0:46"
+            },
+            "scope": 19988,
+            "src": "726:57:46",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "external"
+          },
+          {
+            "body": null,
+            "documentation": null,
+            "id": 19967,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "removeIssueOnBehalf",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 19965,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 19964,
+                  "name": "delegate",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 19967,
+                  "src": "818:16:46",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 19963,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "818:7:46",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "817:18:46"
+            },
+            "returnParameters": {
+              "id": 19966,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "844:0:46"
+            },
+            "scope": 19988,
+            "src": "789:56:46",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "external"
+          },
+          {
+            "body": null,
+            "documentation": null,
+            "id": 19972,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "approveClaimOnBehalf",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 19970,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 19969,
+                  "name": "delegate",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 19972,
+                  "src": "881:16:46",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 19968,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "881:7:46",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "880:18:46"
+            },
+            "returnParameters": {
+              "id": 19971,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "907:0:46"
+            },
+            "scope": 19988,
+            "src": "851:57:46",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "external"
+          },
+          {
+            "body": null,
+            "documentation": null,
+            "id": 19977,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "removeClaimOnBehalf",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 19975,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 19974,
+                  "name": "delegate",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 19977,
+                  "src": "943:16:46",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 19973,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "943:7:46",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "942:18:46"
+            },
+            "returnParameters": {
+              "id": 19976,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "969:0:46"
+            },
+            "scope": 19988,
+            "src": "914:56:46",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "external"
+          },
+          {
+            "body": null,
+            "documentation": null,
+            "id": 19982,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "approveExchangeOnBehalf",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 19980,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 19979,
+                  "name": "delegate",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 19982,
+                  "src": "1009:16:46",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 19978,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1009:7:46",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1008:18:46"
+            },
+            "returnParameters": {
+              "id": 19981,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "1035:0:46"
+            },
+            "scope": 19988,
+            "src": "976:60:46",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "external"
+          },
+          {
+            "body": null,
+            "documentation": null,
+            "id": 19987,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "removeExchangeOnBehalf",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 19985,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 19984,
+                  "name": "delegate",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 19987,
+                  "src": "1074:16:46",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 19983,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1074:7:46",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1073:18:46"
+            },
+            "returnParameters": {
+              "id": 19986,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "1100:0:46"
+            },
+            "scope": 19988,
+            "src": "1042:59:46",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "external"
+          }
+        ],
+        "scope": 19989,
+        "src": "28:1075:46"
+      }
+    ],
+    "src": "0:1104:46"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.5.16+commit.9c3226ce.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.2.1",
+  "updatedAt": "2020-07-05T03:58:13.135Z",
+  "devdoc": {
+    "methods": {}
+  },
+  "userdoc": {
+    "methods": {}
+  }
+}

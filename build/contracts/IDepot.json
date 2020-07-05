@@ -1,0 +1,2062 @@
+{
+  "contractName": "IDepot",
+  "abi": [
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "fundsWallet",
+      "outputs": [
+        {
+          "internalType": "address payable",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "maxEthPurchase",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "minimumDepositAmount",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "amount",
+          "type": "uint256"
+        }
+      ],
+      "name": "synthsReceivedForEther",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "totalSellableDeposits",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "amount",
+          "type": "uint256"
+        }
+      ],
+      "name": "depositSynths",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [],
+      "name": "exchangeEtherForSynths",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": true,
+      "stateMutability": "payable",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "guaranteedRate",
+          "type": "uint256"
+        }
+      ],
+      "name": "exchangeEtherForSynthsAtRate",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": true,
+      "stateMutability": "payable",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [],
+      "name": "withdrawMyDepositedSynths",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [],
+      "name": "exchangeEtherForSNX",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": true,
+      "stateMutability": "payable",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "guaranteedRate",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "guaranteedSynthetixRate",
+          "type": "uint256"
+        }
+      ],
+      "name": "exchangeEtherForSNXAtRate",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": true,
+      "stateMutability": "payable",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "synthAmount",
+          "type": "uint256"
+        }
+      ],
+      "name": "exchangeSynthsForSNX",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "synthAmount",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "guaranteedRate",
+          "type": "uint256"
+        }
+      ],
+      "name": "exchangeSynthsForSNXAtRate",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.5.16+commit.9c3226ce\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"constant\":false,\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"amount\",\"type\":\"uint256\"}],\"name\":\"depositSynths\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[],\"name\":\"exchangeEtherForSNX\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"payable\":true,\"stateMutability\":\"payable\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"guaranteedRate\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"guaranteedSynthetixRate\",\"type\":\"uint256\"}],\"name\":\"exchangeEtherForSNXAtRate\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"payable\":true,\"stateMutability\":\"payable\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[],\"name\":\"exchangeEtherForSynths\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"payable\":true,\"stateMutability\":\"payable\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"guaranteedRate\",\"type\":\"uint256\"}],\"name\":\"exchangeEtherForSynthsAtRate\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"payable\":true,\"stateMutability\":\"payable\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"synthAmount\",\"type\":\"uint256\"}],\"name\":\"exchangeSynthsForSNX\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"synthAmount\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"guaranteedRate\",\"type\":\"uint256\"}],\"name\":\"exchangeSynthsForSNXAtRate\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"fundsWallet\",\"outputs\":[{\"internalType\":\"address payable\",\"name\":\"\",\"type\":\"address\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"maxEthPurchase\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"minimumDepositAmount\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"amount\",\"type\":\"uint256\"}],\"name\":\"synthsReceivedForEther\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"totalSellableDeposits\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[],\"name\":\"withdrawMyDepositedSynths\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"/Users/qizhang/Development/truffle_test2/contracts/interfaces/IDepot.sol\":\"IDepot\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/Users/qizhang/Development/truffle_test2/contracts/interfaces/IDepot.sol\":{\"keccak256\":\"0xac8875efee176472a7a98ea82c2d7aa8bce202e1b97d1e948d821a08e37cc195\",\"urls\":[\"bzz-raw://968cb6ded7003dc88ee3afe589278750e223328ddd79d0a5350d64f654e12727\",\"dweb:/ipfs/QmZknGNXLcniKPJpBnn3ZLg5ah3AJ5eVNppnkMHC9farPm\"]}},\"version\":1}",
+  "bytecode": "0x",
+  "deployedBytecode": "0x",
+  "sourceMap": "",
+  "deployedSourceMap": "",
+  "source": "pragma solidity >=0.4.24;\n\n\ninterface IDepot {\n    // Views\n    function fundsWallet() external view returns (address payable);\n\n    function maxEthPurchase() external view returns (uint);\n\n    function minimumDepositAmount() external view returns (uint);\n\n    function synthsReceivedForEther(uint amount) external view returns (uint);\n\n    function totalSellableDeposits() external view returns (uint);\n\n    // Mutative functions\n    function depositSynths(uint amount) external;\n\n    function exchangeEtherForSynths() external payable returns (uint);\n\n    function exchangeEtherForSynthsAtRate(uint guaranteedRate) external payable returns (uint);\n\n    function withdrawMyDepositedSynths() external;\n\n    // Note: On mainnet no SNX has been deposited. The following functions are kept alive for testnet SNX faucets.\n    function exchangeEtherForSNX() external payable returns (uint);\n\n    function exchangeEtherForSNXAtRate(uint guaranteedRate, uint guaranteedSynthetixRate) external payable returns (uint);\n\n    function exchangeSynthsForSNX(uint synthAmount) external returns (uint);\n\n    function exchangeSynthsForSNXAtRate(uint synthAmount, uint guaranteedRate) external returns (uint);\n}\n",
+  "sourcePath": "/Users/qizhang/Development/truffle_test2/contracts/interfaces/IDepot.sol",
+  "ast": {
+    "absolutePath": "/Users/qizhang/Development/truffle_test2/contracts/interfaces/IDepot.sol",
+    "exportedSymbols": {
+      "IDepot": [
+        20068
+      ]
+    },
+    "id": 20069,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 19990,
+        "literals": [
+          "solidity",
+          ">=",
+          "0.4",
+          ".24"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:25:47"
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "documentation": null,
+        "fullyImplemented": false,
+        "id": 20068,
+        "linearizedBaseContracts": [
+          20068
+        ],
+        "name": "IDepot",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "body": null,
+            "documentation": null,
+            "id": 19995,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "fundsWallet",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 19991,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "84:2:47"
+            },
+            "returnParameters": {
+              "id": 19994,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 19993,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 19995,
+                  "src": "110:15:47",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address_payable",
+                    "typeString": "address payable"
+                  },
+                  "typeName": {
+                    "id": 19992,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "110:15:47",
+                    "stateMutability": "payable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address_payable",
+                      "typeString": "address payable"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "109:17:47"
+            },
+            "scope": 20068,
+            "src": "64:63:47",
+            "stateMutability": "view",
+            "superFunction": null,
+            "visibility": "external"
+          },
+          {
+            "body": null,
+            "documentation": null,
+            "id": 20000,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "maxEthPurchase",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 19996,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "156:2:47"
+            },
+            "returnParameters": {
+              "id": 19999,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 19998,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 20000,
+                  "src": "182:4:47",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 19997,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "182:4:47",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "181:6:47"
+            },
+            "scope": 20068,
+            "src": "133:55:47",
+            "stateMutability": "view",
+            "superFunction": null,
+            "visibility": "external"
+          },
+          {
+            "body": null,
+            "documentation": null,
+            "id": 20005,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "minimumDepositAmount",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 20001,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "223:2:47"
+            },
+            "returnParameters": {
+              "id": 20004,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 20003,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 20005,
+                  "src": "249:4:47",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 20002,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "249:4:47",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "248:6:47"
+            },
+            "scope": 20068,
+            "src": "194:61:47",
+            "stateMutability": "view",
+            "superFunction": null,
+            "visibility": "external"
+          },
+          {
+            "body": null,
+            "documentation": null,
+            "id": 20012,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "synthsReceivedForEther",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 20008,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 20007,
+                  "name": "amount",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 20012,
+                  "src": "293:11:47",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 20006,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "293:4:47",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "292:13:47"
+            },
+            "returnParameters": {
+              "id": 20011,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 20010,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 20012,
+                  "src": "329:4:47",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 20009,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "329:4:47",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "328:6:47"
+            },
+            "scope": 20068,
+            "src": "261:74:47",
+            "stateMutability": "view",
+            "superFunction": null,
+            "visibility": "external"
+          },
+          {
+            "body": null,
+            "documentation": null,
+            "id": 20017,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "totalSellableDeposits",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 20013,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "371:2:47"
+            },
+            "returnParameters": {
+              "id": 20016,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 20015,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 20017,
+                  "src": "397:4:47",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 20014,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "397:4:47",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "396:6:47"
+            },
+            "scope": 20068,
+            "src": "341:62:47",
+            "stateMutability": "view",
+            "superFunction": null,
+            "visibility": "external"
+          },
+          {
+            "body": null,
+            "documentation": null,
+            "id": 20022,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "depositSynths",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 20020,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 20019,
+                  "name": "amount",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 20022,
+                  "src": "458:11:47",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 20018,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "458:4:47",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "457:13:47"
+            },
+            "returnParameters": {
+              "id": 20021,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "479:0:47"
+            },
+            "scope": 20068,
+            "src": "435:45:47",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "external"
+          },
+          {
+            "body": null,
+            "documentation": null,
+            "id": 20027,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "exchangeEtherForSynths",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 20023,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "517:2:47"
+            },
+            "returnParameters": {
+              "id": 20026,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 20025,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 20027,
+                  "src": "546:4:47",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 20024,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "546:4:47",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "545:6:47"
+            },
+            "scope": 20068,
+            "src": "486:66:47",
+            "stateMutability": "payable",
+            "superFunction": null,
+            "visibility": "external"
+          },
+          {
+            "body": null,
+            "documentation": null,
+            "id": 20034,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "exchangeEtherForSynthsAtRate",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 20030,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 20029,
+                  "name": "guaranteedRate",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 20034,
+                  "src": "596:19:47",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 20028,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "596:4:47",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "595:21:47"
+            },
+            "returnParameters": {
+              "id": 20033,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 20032,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 20034,
+                  "src": "643:4:47",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 20031,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "643:4:47",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "642:6:47"
+            },
+            "scope": 20068,
+            "src": "558:91:47",
+            "stateMutability": "payable",
+            "superFunction": null,
+            "visibility": "external"
+          },
+          {
+            "body": null,
+            "documentation": null,
+            "id": 20037,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "withdrawMyDepositedSynths",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 20035,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "689:2:47"
+            },
+            "returnParameters": {
+              "id": 20036,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "700:0:47"
+            },
+            "scope": 20068,
+            "src": "655:46:47",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "external"
+          },
+          {
+            "body": null,
+            "documentation": null,
+            "id": 20042,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "exchangeEtherForSNX",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 20038,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "850:2:47"
+            },
+            "returnParameters": {
+              "id": 20041,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 20040,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 20042,
+                  "src": "879:4:47",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 20039,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "879:4:47",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "878:6:47"
+            },
+            "scope": 20068,
+            "src": "822:63:47",
+            "stateMutability": "payable",
+            "superFunction": null,
+            "visibility": "external"
+          },
+          {
+            "body": null,
+            "documentation": null,
+            "id": 20051,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "exchangeEtherForSNXAtRate",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 20047,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 20044,
+                  "name": "guaranteedRate",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 20051,
+                  "src": "926:19:47",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 20043,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "926:4:47",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 20046,
+                  "name": "guaranteedSynthetixRate",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 20051,
+                  "src": "947:28:47",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 20045,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "947:4:47",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "925:51:47"
+            },
+            "returnParameters": {
+              "id": 20050,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 20049,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 20051,
+                  "src": "1003:4:47",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 20048,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1003:4:47",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1002:6:47"
+            },
+            "scope": 20068,
+            "src": "891:118:47",
+            "stateMutability": "payable",
+            "superFunction": null,
+            "visibility": "external"
+          },
+          {
+            "body": null,
+            "documentation": null,
+            "id": 20058,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "exchangeSynthsForSNX",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 20054,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 20053,
+                  "name": "synthAmount",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 20058,
+                  "src": "1045:16:47",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 20052,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1045:4:47",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1044:18:47"
+            },
+            "returnParameters": {
+              "id": 20057,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 20056,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 20058,
+                  "src": "1081:4:47",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 20055,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1081:4:47",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1080:6:47"
+            },
+            "scope": 20068,
+            "src": "1015:72:47",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "external"
+          },
+          {
+            "body": null,
+            "documentation": null,
+            "id": 20067,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "exchangeSynthsForSNXAtRate",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 20063,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 20060,
+                  "name": "synthAmount",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 20067,
+                  "src": "1129:16:47",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 20059,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1129:4:47",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 20062,
+                  "name": "guaranteedRate",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 20067,
+                  "src": "1147:19:47",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 20061,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1147:4:47",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1128:39:47"
+            },
+            "returnParameters": {
+              "id": 20066,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 20065,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 20067,
+                  "src": "1186:4:47",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 20064,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1186:4:47",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1185:6:47"
+            },
+            "scope": 20068,
+            "src": "1093:99:47",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "external"
+          }
+        ],
+        "scope": 20069,
+        "src": "28:1166:47"
+      }
+    ],
+    "src": "0:1195:47"
+  },
+  "legacyAST": {
+    "absolutePath": "/Users/qizhang/Development/truffle_test2/contracts/interfaces/IDepot.sol",
+    "exportedSymbols": {
+      "IDepot": [
+        20068
+      ]
+    },
+    "id": 20069,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 19990,
+        "literals": [
+          "solidity",
+          ">=",
+          "0.4",
+          ".24"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:25:47"
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "documentation": null,
+        "fullyImplemented": false,
+        "id": 20068,
+        "linearizedBaseContracts": [
+          20068
+        ],
+        "name": "IDepot",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "body": null,
+            "documentation": null,
+            "id": 19995,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "fundsWallet",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 19991,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "84:2:47"
+            },
+            "returnParameters": {
+              "id": 19994,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 19993,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 19995,
+                  "src": "110:15:47",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address_payable",
+                    "typeString": "address payable"
+                  },
+                  "typeName": {
+                    "id": 19992,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "110:15:47",
+                    "stateMutability": "payable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address_payable",
+                      "typeString": "address payable"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "109:17:47"
+            },
+            "scope": 20068,
+            "src": "64:63:47",
+            "stateMutability": "view",
+            "superFunction": null,
+            "visibility": "external"
+          },
+          {
+            "body": null,
+            "documentation": null,
+            "id": 20000,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "maxEthPurchase",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 19996,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "156:2:47"
+            },
+            "returnParameters": {
+              "id": 19999,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 19998,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 20000,
+                  "src": "182:4:47",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 19997,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "182:4:47",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "181:6:47"
+            },
+            "scope": 20068,
+            "src": "133:55:47",
+            "stateMutability": "view",
+            "superFunction": null,
+            "visibility": "external"
+          },
+          {
+            "body": null,
+            "documentation": null,
+            "id": 20005,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "minimumDepositAmount",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 20001,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "223:2:47"
+            },
+            "returnParameters": {
+              "id": 20004,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 20003,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 20005,
+                  "src": "249:4:47",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 20002,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "249:4:47",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "248:6:47"
+            },
+            "scope": 20068,
+            "src": "194:61:47",
+            "stateMutability": "view",
+            "superFunction": null,
+            "visibility": "external"
+          },
+          {
+            "body": null,
+            "documentation": null,
+            "id": 20012,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "synthsReceivedForEther",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 20008,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 20007,
+                  "name": "amount",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 20012,
+                  "src": "293:11:47",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 20006,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "293:4:47",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "292:13:47"
+            },
+            "returnParameters": {
+              "id": 20011,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 20010,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 20012,
+                  "src": "329:4:47",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 20009,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "329:4:47",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "328:6:47"
+            },
+            "scope": 20068,
+            "src": "261:74:47",
+            "stateMutability": "view",
+            "superFunction": null,
+            "visibility": "external"
+          },
+          {
+            "body": null,
+            "documentation": null,
+            "id": 20017,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "totalSellableDeposits",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 20013,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "371:2:47"
+            },
+            "returnParameters": {
+              "id": 20016,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 20015,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 20017,
+                  "src": "397:4:47",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 20014,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "397:4:47",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "396:6:47"
+            },
+            "scope": 20068,
+            "src": "341:62:47",
+            "stateMutability": "view",
+            "superFunction": null,
+            "visibility": "external"
+          },
+          {
+            "body": null,
+            "documentation": null,
+            "id": 20022,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "depositSynths",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 20020,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 20019,
+                  "name": "amount",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 20022,
+                  "src": "458:11:47",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 20018,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "458:4:47",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "457:13:47"
+            },
+            "returnParameters": {
+              "id": 20021,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "479:0:47"
+            },
+            "scope": 20068,
+            "src": "435:45:47",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "external"
+          },
+          {
+            "body": null,
+            "documentation": null,
+            "id": 20027,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "exchangeEtherForSynths",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 20023,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "517:2:47"
+            },
+            "returnParameters": {
+              "id": 20026,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 20025,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 20027,
+                  "src": "546:4:47",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 20024,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "546:4:47",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "545:6:47"
+            },
+            "scope": 20068,
+            "src": "486:66:47",
+            "stateMutability": "payable",
+            "superFunction": null,
+            "visibility": "external"
+          },
+          {
+            "body": null,
+            "documentation": null,
+            "id": 20034,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "exchangeEtherForSynthsAtRate",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 20030,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 20029,
+                  "name": "guaranteedRate",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 20034,
+                  "src": "596:19:47",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 20028,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "596:4:47",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "595:21:47"
+            },
+            "returnParameters": {
+              "id": 20033,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 20032,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 20034,
+                  "src": "643:4:47",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 20031,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "643:4:47",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "642:6:47"
+            },
+            "scope": 20068,
+            "src": "558:91:47",
+            "stateMutability": "payable",
+            "superFunction": null,
+            "visibility": "external"
+          },
+          {
+            "body": null,
+            "documentation": null,
+            "id": 20037,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "withdrawMyDepositedSynths",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 20035,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "689:2:47"
+            },
+            "returnParameters": {
+              "id": 20036,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "700:0:47"
+            },
+            "scope": 20068,
+            "src": "655:46:47",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "external"
+          },
+          {
+            "body": null,
+            "documentation": null,
+            "id": 20042,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "exchangeEtherForSNX",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 20038,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "850:2:47"
+            },
+            "returnParameters": {
+              "id": 20041,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 20040,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 20042,
+                  "src": "879:4:47",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 20039,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "879:4:47",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "878:6:47"
+            },
+            "scope": 20068,
+            "src": "822:63:47",
+            "stateMutability": "payable",
+            "superFunction": null,
+            "visibility": "external"
+          },
+          {
+            "body": null,
+            "documentation": null,
+            "id": 20051,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "exchangeEtherForSNXAtRate",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 20047,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 20044,
+                  "name": "guaranteedRate",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 20051,
+                  "src": "926:19:47",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 20043,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "926:4:47",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 20046,
+                  "name": "guaranteedSynthetixRate",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 20051,
+                  "src": "947:28:47",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 20045,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "947:4:47",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "925:51:47"
+            },
+            "returnParameters": {
+              "id": 20050,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 20049,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 20051,
+                  "src": "1003:4:47",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 20048,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1003:4:47",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1002:6:47"
+            },
+            "scope": 20068,
+            "src": "891:118:47",
+            "stateMutability": "payable",
+            "superFunction": null,
+            "visibility": "external"
+          },
+          {
+            "body": null,
+            "documentation": null,
+            "id": 20058,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "exchangeSynthsForSNX",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 20054,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 20053,
+                  "name": "synthAmount",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 20058,
+                  "src": "1045:16:47",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 20052,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1045:4:47",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1044:18:47"
+            },
+            "returnParameters": {
+              "id": 20057,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 20056,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 20058,
+                  "src": "1081:4:47",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 20055,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1081:4:47",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1080:6:47"
+            },
+            "scope": 20068,
+            "src": "1015:72:47",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "external"
+          },
+          {
+            "body": null,
+            "documentation": null,
+            "id": 20067,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "exchangeSynthsForSNXAtRate",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 20063,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 20060,
+                  "name": "synthAmount",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 20067,
+                  "src": "1129:16:47",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 20059,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1129:4:47",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 20062,
+                  "name": "guaranteedRate",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 20067,
+                  "src": "1147:19:47",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 20061,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1147:4:47",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1128:39:47"
+            },
+            "returnParameters": {
+              "id": 20066,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 20065,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 20067,
+                  "src": "1186:4:47",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 20064,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1186:4:47",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1185:6:47"
+            },
+            "scope": 20068,
+            "src": "1093:99:47",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "external"
+          }
+        ],
+        "scope": 20069,
+        "src": "28:1166:47"
+      }
+    ],
+    "src": "0:1195:47"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.5.16+commit.9c3226ce.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.2.1",
+  "updatedAt": "2020-07-05T03:58:13.137Z",
+  "devdoc": {
+    "methods": {}
+  },
+  "userdoc": {
+    "methods": {}
+  }
+}

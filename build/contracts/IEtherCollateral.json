@@ -1,0 +1,904 @@
+{
+  "contractName": "IEtherCollateral",
+  "abi": [
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "totalIssuedSynths",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "totalLoansCreated",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "totalOpenLoanCount",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [],
+      "name": "openLoan",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "loanID",
+          "type": "uint256"
+        }
+      ],
+      "payable": true,
+      "stateMutability": "payable",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "loanID",
+          "type": "uint256"
+        }
+      ],
+      "name": "closeLoan",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "_loanCreatorsAddress",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "_loanID",
+          "type": "uint256"
+        }
+      ],
+      "name": "liquidateUnclosedLoan",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.5.16+commit.9c3226ce\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"constant\":false,\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"loanID\",\"type\":\"uint256\"}],\"name\":\"closeLoan\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"internalType\":\"address\",\"name\":\"_loanCreatorsAddress\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"_loanID\",\"type\":\"uint256\"}],\"name\":\"liquidateUnclosedLoan\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[],\"name\":\"openLoan\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"loanID\",\"type\":\"uint256\"}],\"payable\":true,\"stateMutability\":\"payable\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"totalIssuedSynths\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"totalLoansCreated\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"totalOpenLoanCount\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"/Users/qizhang/Development/truffle_test2/contracts/interfaces/IEtherCollateral.sol\":\"IEtherCollateral\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/Users/qizhang/Development/truffle_test2/contracts/interfaces/IEtherCollateral.sol\":{\"keccak256\":\"0xc683f2e2ce8ee9bda72444fb4e405f728dd4654ebd480524c67ab36faa8f4d26\",\"urls\":[\"bzz-raw://0b67e04a3b3458c51acc051cd629aa35967e1a5d9ceff747c9ffd91cc204bd31\",\"dweb:/ipfs/QmQT9WdjoufEhx1pGtuTXrgiY8cpKGH2weaYF572SPmkLA\"]}},\"version\":1}",
+  "bytecode": "0x",
+  "deployedBytecode": "0x",
+  "sourceMap": "",
+  "deployedSourceMap": "",
+  "source": "pragma solidity >=0.4.24;\n\n\ninterface IEtherCollateral {\n    // Views\n    function totalIssuedSynths() external view returns (uint256);\n\n    function totalLoansCreated() external view returns (uint256);\n\n    function totalOpenLoanCount() external view returns (uint256);\n\n    // Mutative functions\n    function openLoan() external payable returns (uint256 loanID);\n\n    function closeLoan(uint256 loanID) external;\n\n    function liquidateUnclosedLoan(address _loanCreatorsAddress, uint256 _loanID) external;\n}\n",
+  "sourcePath": "/Users/qizhang/Development/truffle_test2/contracts/interfaces/IEtherCollateral.sol",
+  "ast": {
+    "absolutePath": "/Users/qizhang/Development/truffle_test2/contracts/interfaces/IEtherCollateral.sol",
+    "exportedSymbols": {
+      "IEtherCollateral": [
+        20187
+      ]
+    },
+    "id": 20188,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 20154,
+        "literals": [
+          "solidity",
+          ">=",
+          "0.4",
+          ".24"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:25:49"
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "documentation": null,
+        "fullyImplemented": false,
+        "id": 20187,
+        "linearizedBaseContracts": [
+          20187
+        ],
+        "name": "IEtherCollateral",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "body": null,
+            "documentation": null,
+            "id": 20159,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "totalIssuedSynths",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 20155,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "100:2:49"
+            },
+            "returnParameters": {
+              "id": 20158,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 20157,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 20159,
+                  "src": "126:7:49",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 20156,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "126:7:49",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "125:9:49"
+            },
+            "scope": 20187,
+            "src": "74:61:49",
+            "stateMutability": "view",
+            "superFunction": null,
+            "visibility": "external"
+          },
+          {
+            "body": null,
+            "documentation": null,
+            "id": 20164,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "totalLoansCreated",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 20160,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "167:2:49"
+            },
+            "returnParameters": {
+              "id": 20163,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 20162,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 20164,
+                  "src": "193:7:49",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 20161,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "193:7:49",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "192:9:49"
+            },
+            "scope": 20187,
+            "src": "141:61:49",
+            "stateMutability": "view",
+            "superFunction": null,
+            "visibility": "external"
+          },
+          {
+            "body": null,
+            "documentation": null,
+            "id": 20169,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "totalOpenLoanCount",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 20165,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "235:2:49"
+            },
+            "returnParameters": {
+              "id": 20168,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 20167,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 20169,
+                  "src": "261:7:49",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 20166,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "261:7:49",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "260:9:49"
+            },
+            "scope": 20187,
+            "src": "208:62:49",
+            "stateMutability": "view",
+            "superFunction": null,
+            "visibility": "external"
+          },
+          {
+            "body": null,
+            "documentation": null,
+            "id": 20174,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "openLoan",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 20170,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "319:2:49"
+            },
+            "returnParameters": {
+              "id": 20173,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 20172,
+                  "name": "loanID",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 20174,
+                  "src": "348:14:49",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 20171,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "348:7:49",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "347:16:49"
+            },
+            "scope": 20187,
+            "src": "302:62:49",
+            "stateMutability": "payable",
+            "superFunction": null,
+            "visibility": "external"
+          },
+          {
+            "body": null,
+            "documentation": null,
+            "id": 20179,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "closeLoan",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 20177,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 20176,
+                  "name": "loanID",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 20179,
+                  "src": "389:14:49",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 20175,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "389:7:49",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "388:16:49"
+            },
+            "returnParameters": {
+              "id": 20178,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "413:0:49"
+            },
+            "scope": 20187,
+            "src": "370:44:49",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "external"
+          },
+          {
+            "body": null,
+            "documentation": null,
+            "id": 20186,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "liquidateUnclosedLoan",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 20184,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 20181,
+                  "name": "_loanCreatorsAddress",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 20186,
+                  "src": "451:28:49",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 20180,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "451:7:49",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 20183,
+                  "name": "_loanID",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 20186,
+                  "src": "481:15:49",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 20182,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "481:7:49",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "450:47:49"
+            },
+            "returnParameters": {
+              "id": 20185,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "506:0:49"
+            },
+            "scope": 20187,
+            "src": "420:87:49",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "external"
+          }
+        ],
+        "scope": 20188,
+        "src": "28:481:49"
+      }
+    ],
+    "src": "0:510:49"
+  },
+  "legacyAST": {
+    "absolutePath": "/Users/qizhang/Development/truffle_test2/contracts/interfaces/IEtherCollateral.sol",
+    "exportedSymbols": {
+      "IEtherCollateral": [
+        20187
+      ]
+    },
+    "id": 20188,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 20154,
+        "literals": [
+          "solidity",
+          ">=",
+          "0.4",
+          ".24"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:25:49"
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "documentation": null,
+        "fullyImplemented": false,
+        "id": 20187,
+        "linearizedBaseContracts": [
+          20187
+        ],
+        "name": "IEtherCollateral",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "body": null,
+            "documentation": null,
+            "id": 20159,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "totalIssuedSynths",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 20155,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "100:2:49"
+            },
+            "returnParameters": {
+              "id": 20158,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 20157,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 20159,
+                  "src": "126:7:49",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 20156,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "126:7:49",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "125:9:49"
+            },
+            "scope": 20187,
+            "src": "74:61:49",
+            "stateMutability": "view",
+            "superFunction": null,
+            "visibility": "external"
+          },
+          {
+            "body": null,
+            "documentation": null,
+            "id": 20164,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "totalLoansCreated",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 20160,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "167:2:49"
+            },
+            "returnParameters": {
+              "id": 20163,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 20162,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 20164,
+                  "src": "193:7:49",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 20161,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "193:7:49",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "192:9:49"
+            },
+            "scope": 20187,
+            "src": "141:61:49",
+            "stateMutability": "view",
+            "superFunction": null,
+            "visibility": "external"
+          },
+          {
+            "body": null,
+            "documentation": null,
+            "id": 20169,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "totalOpenLoanCount",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 20165,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "235:2:49"
+            },
+            "returnParameters": {
+              "id": 20168,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 20167,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 20169,
+                  "src": "261:7:49",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 20166,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "261:7:49",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "260:9:49"
+            },
+            "scope": 20187,
+            "src": "208:62:49",
+            "stateMutability": "view",
+            "superFunction": null,
+            "visibility": "external"
+          },
+          {
+            "body": null,
+            "documentation": null,
+            "id": 20174,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "openLoan",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 20170,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "319:2:49"
+            },
+            "returnParameters": {
+              "id": 20173,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 20172,
+                  "name": "loanID",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 20174,
+                  "src": "348:14:49",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 20171,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "348:7:49",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "347:16:49"
+            },
+            "scope": 20187,
+            "src": "302:62:49",
+            "stateMutability": "payable",
+            "superFunction": null,
+            "visibility": "external"
+          },
+          {
+            "body": null,
+            "documentation": null,
+            "id": 20179,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "closeLoan",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 20177,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 20176,
+                  "name": "loanID",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 20179,
+                  "src": "389:14:49",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 20175,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "389:7:49",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "388:16:49"
+            },
+            "returnParameters": {
+              "id": 20178,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "413:0:49"
+            },
+            "scope": 20187,
+            "src": "370:44:49",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "external"
+          },
+          {
+            "body": null,
+            "documentation": null,
+            "id": 20186,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "liquidateUnclosedLoan",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 20184,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 20181,
+                  "name": "_loanCreatorsAddress",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 20186,
+                  "src": "451:28:49",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 20180,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "451:7:49",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 20183,
+                  "name": "_loanID",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 20186,
+                  "src": "481:15:49",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 20182,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "481:7:49",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "450:47:49"
+            },
+            "returnParameters": {
+              "id": 20185,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "506:0:49"
+            },
+            "scope": 20187,
+            "src": "420:87:49",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "external"
+          }
+        ],
+        "scope": 20188,
+        "src": "28:481:49"
+      }
+    ],
+    "src": "0:510:49"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.5.16+commit.9c3226ce.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.2.1",
+  "updatedAt": "2020-07-05T03:58:13.140Z",
+  "devdoc": {
+    "methods": {}
+  },
+  "userdoc": {
+    "methods": {}
+  }
+}

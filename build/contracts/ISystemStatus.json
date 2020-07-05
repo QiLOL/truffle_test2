@@ -1,0 +1,599 @@
+{
+  "contractName": "ISystemStatus",
+  "abi": [
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "requireSystemActive",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "requireIssuanceActive",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "requireExchangeActive",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [
+        {
+          "internalType": "bytes32",
+          "name": "currencyKey",
+          "type": "bytes32"
+        }
+      ],
+      "name": "requireSynthActive",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [
+        {
+          "internalType": "bytes32",
+          "name": "sourceCurrencyKey",
+          "type": "bytes32"
+        },
+        {
+          "internalType": "bytes32",
+          "name": "destinationCurrencyKey",
+          "type": "bytes32"
+        }
+      ],
+      "name": "requireSynthsActive",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.5.16+commit.9c3226ce\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"constant\":true,\"inputs\":[],\"name\":\"requireExchangeActive\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"requireIssuanceActive\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[{\"internalType\":\"bytes32\",\"name\":\"currencyKey\",\"type\":\"bytes32\"}],\"name\":\"requireSynthActive\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[{\"internalType\":\"bytes32\",\"name\":\"sourceCurrencyKey\",\"type\":\"bytes32\"},{\"internalType\":\"bytes32\",\"name\":\"destinationCurrencyKey\",\"type\":\"bytes32\"}],\"name\":\"requireSynthsActive\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"requireSystemActive\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"/Users/qizhang/Development/truffle_test2/contracts/interfaces/ISystemStatus.sol\":\"ISystemStatus\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/Users/qizhang/Development/truffle_test2/contracts/interfaces/ISystemStatus.sol\":{\"keccak256\":\"0x15bad1acf1c9c911908aecf12d2a413e8251db17e513d5100a34e183220a3a46\",\"urls\":[\"bzz-raw://fd9c0071a17f3f83a621bb5c23c2f383152e7ceac3cb2b7940fe123f2d50fbab\",\"dweb:/ipfs/QmZVvh6p1bJcn7W2zMGj8FTXudPFReZKsRZSNxfMVvr8h8\"]}},\"version\":1}",
+  "bytecode": "0x",
+  "deployedBytecode": "0x",
+  "sourceMap": "",
+  "deployedSourceMap": "",
+  "source": "pragma solidity >=0.4.24;\n\n\ninterface ISystemStatus {\n    // Views\n    function requireSystemActive() external view;\n\n    function requireIssuanceActive() external view;\n\n    function requireExchangeActive() external view;\n\n    function requireSynthActive(bytes32 currencyKey) external view;\n\n    function requireSynthsActive(bytes32 sourceCurrencyKey, bytes32 destinationCurrencyKey) external view;\n}\n",
+  "sourcePath": "/Users/qizhang/Development/truffle_test2/contracts/interfaces/ISystemStatus.sol",
+  "ast": {
+    "absolutePath": "/Users/qizhang/Development/truffle_test2/contracts/interfaces/ISystemStatus.sol",
+    "exportedSymbols": {
+      "ISystemStatus": [
+        21294
+      ]
+    },
+    "id": 21295,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 21272,
+        "literals": [
+          "solidity",
+          ">=",
+          "0.4",
+          ".24"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:25:62"
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "documentation": null,
+        "fullyImplemented": false,
+        "id": 21294,
+        "linearizedBaseContracts": [
+          21294
+        ],
+        "name": "ISystemStatus",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "body": null,
+            "documentation": null,
+            "id": 21275,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "requireSystemActive",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 21273,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "99:2:62"
+            },
+            "returnParameters": {
+              "id": 21274,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "115:0:62"
+            },
+            "scope": 21294,
+            "src": "71:45:62",
+            "stateMutability": "view",
+            "superFunction": null,
+            "visibility": "external"
+          },
+          {
+            "body": null,
+            "documentation": null,
+            "id": 21278,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "requireIssuanceActive",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 21276,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "152:2:62"
+            },
+            "returnParameters": {
+              "id": 21277,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "168:0:62"
+            },
+            "scope": 21294,
+            "src": "122:47:62",
+            "stateMutability": "view",
+            "superFunction": null,
+            "visibility": "external"
+          },
+          {
+            "body": null,
+            "documentation": null,
+            "id": 21281,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "requireExchangeActive",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 21279,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "205:2:62"
+            },
+            "returnParameters": {
+              "id": 21280,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "221:0:62"
+            },
+            "scope": 21294,
+            "src": "175:47:62",
+            "stateMutability": "view",
+            "superFunction": null,
+            "visibility": "external"
+          },
+          {
+            "body": null,
+            "documentation": null,
+            "id": 21286,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "requireSynthActive",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 21284,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 21283,
+                  "name": "currencyKey",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 21286,
+                  "src": "256:19:62",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  },
+                  "typeName": {
+                    "id": 21282,
+                    "name": "bytes32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "256:7:62",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "255:21:62"
+            },
+            "returnParameters": {
+              "id": 21285,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "290:0:62"
+            },
+            "scope": 21294,
+            "src": "228:63:62",
+            "stateMutability": "view",
+            "superFunction": null,
+            "visibility": "external"
+          },
+          {
+            "body": null,
+            "documentation": null,
+            "id": 21293,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "requireSynthsActive",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 21291,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 21288,
+                  "name": "sourceCurrencyKey",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 21293,
+                  "src": "326:25:62",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  },
+                  "typeName": {
+                    "id": 21287,
+                    "name": "bytes32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "326:7:62",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 21290,
+                  "name": "destinationCurrencyKey",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 21293,
+                  "src": "353:30:62",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  },
+                  "typeName": {
+                    "id": 21289,
+                    "name": "bytes32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "353:7:62",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "325:59:62"
+            },
+            "returnParameters": {
+              "id": 21292,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "398:0:62"
+            },
+            "scope": 21294,
+            "src": "297:102:62",
+            "stateMutability": "view",
+            "superFunction": null,
+            "visibility": "external"
+          }
+        ],
+        "scope": 21295,
+        "src": "28:373:62"
+      }
+    ],
+    "src": "0:402:62"
+  },
+  "legacyAST": {
+    "absolutePath": "/Users/qizhang/Development/truffle_test2/contracts/interfaces/ISystemStatus.sol",
+    "exportedSymbols": {
+      "ISystemStatus": [
+        21294
+      ]
+    },
+    "id": 21295,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 21272,
+        "literals": [
+          "solidity",
+          ">=",
+          "0.4",
+          ".24"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:25:62"
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "documentation": null,
+        "fullyImplemented": false,
+        "id": 21294,
+        "linearizedBaseContracts": [
+          21294
+        ],
+        "name": "ISystemStatus",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "body": null,
+            "documentation": null,
+            "id": 21275,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "requireSystemActive",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 21273,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "99:2:62"
+            },
+            "returnParameters": {
+              "id": 21274,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "115:0:62"
+            },
+            "scope": 21294,
+            "src": "71:45:62",
+            "stateMutability": "view",
+            "superFunction": null,
+            "visibility": "external"
+          },
+          {
+            "body": null,
+            "documentation": null,
+            "id": 21278,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "requireIssuanceActive",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 21276,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "152:2:62"
+            },
+            "returnParameters": {
+              "id": 21277,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "168:0:62"
+            },
+            "scope": 21294,
+            "src": "122:47:62",
+            "stateMutability": "view",
+            "superFunction": null,
+            "visibility": "external"
+          },
+          {
+            "body": null,
+            "documentation": null,
+            "id": 21281,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "requireExchangeActive",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 21279,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "205:2:62"
+            },
+            "returnParameters": {
+              "id": 21280,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "221:0:62"
+            },
+            "scope": 21294,
+            "src": "175:47:62",
+            "stateMutability": "view",
+            "superFunction": null,
+            "visibility": "external"
+          },
+          {
+            "body": null,
+            "documentation": null,
+            "id": 21286,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "requireSynthActive",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 21284,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 21283,
+                  "name": "currencyKey",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 21286,
+                  "src": "256:19:62",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  },
+                  "typeName": {
+                    "id": 21282,
+                    "name": "bytes32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "256:7:62",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "255:21:62"
+            },
+            "returnParameters": {
+              "id": 21285,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "290:0:62"
+            },
+            "scope": 21294,
+            "src": "228:63:62",
+            "stateMutability": "view",
+            "superFunction": null,
+            "visibility": "external"
+          },
+          {
+            "body": null,
+            "documentation": null,
+            "id": 21293,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "requireSynthsActive",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 21291,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 21288,
+                  "name": "sourceCurrencyKey",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 21293,
+                  "src": "326:25:62",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  },
+                  "typeName": {
+                    "id": 21287,
+                    "name": "bytes32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "326:7:62",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 21290,
+                  "name": "destinationCurrencyKey",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 21293,
+                  "src": "353:30:62",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  },
+                  "typeName": {
+                    "id": 21289,
+                    "name": "bytes32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "353:7:62",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "325:59:62"
+            },
+            "returnParameters": {
+              "id": 21292,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "398:0:62"
+            },
+            "scope": 21294,
+            "src": "297:102:62",
+            "stateMutability": "view",
+            "superFunction": null,
+            "visibility": "external"
+          }
+        ],
+        "scope": 21295,
+        "src": "28:373:62"
+      }
+    ],
+    "src": "0:402:62"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.5.16+commit.9c3226ce.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.2.1",
+  "updatedAt": "2020-07-05T03:58:13.156Z",
+  "devdoc": {
+    "methods": {}
+  },
+  "userdoc": {
+    "methods": {}
+  }
+}

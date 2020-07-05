@@ -1,0 +1,1646 @@
+{
+  "contractName": "ILiquidations",
+  "abi": [
+    {
+      "constant": true,
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "account",
+          "type": "address"
+        }
+      ],
+      "name": "isOpenForLiquidation",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "account",
+          "type": "address"
+        }
+      ],
+      "name": "getLiquidationDeadlineForAccount",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "account",
+          "type": "address"
+        }
+      ],
+      "name": "isLiquidationDeadlinePassed",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "liquidationDelay",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "liquidationRatio",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "liquidationPenalty",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "debtBalance",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "collateral",
+          "type": "uint256"
+        }
+      ],
+      "name": "calculateAmountToFixCollateral",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "account",
+          "type": "address"
+        }
+      ],
+      "name": "flagAccountForLiquidation",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "account",
+          "type": "address"
+        }
+      ],
+      "name": "removeAccountInLiquidation",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "account",
+          "type": "address"
+        }
+      ],
+      "name": "checkAndRemoveAccountInLiquidation",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.5.16+commit.9c3226ce\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"constant\":true,\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"debtBalance\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"collateral\",\"type\":\"uint256\"}],\"name\":\"calculateAmountToFixCollateral\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"internalType\":\"address\",\"name\":\"account\",\"type\":\"address\"}],\"name\":\"checkAndRemoveAccountInLiquidation\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"internalType\":\"address\",\"name\":\"account\",\"type\":\"address\"}],\"name\":\"flagAccountForLiquidation\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[{\"internalType\":\"address\",\"name\":\"account\",\"type\":\"address\"}],\"name\":\"getLiquidationDeadlineForAccount\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[{\"internalType\":\"address\",\"name\":\"account\",\"type\":\"address\"}],\"name\":\"isLiquidationDeadlinePassed\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[{\"internalType\":\"address\",\"name\":\"account\",\"type\":\"address\"}],\"name\":\"isOpenForLiquidation\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"liquidationDelay\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"liquidationPenalty\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"liquidationRatio\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"internalType\":\"address\",\"name\":\"account\",\"type\":\"address\"}],\"name\":\"removeAccountInLiquidation\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"/Users/qizhang/Development/truffle_test2/contracts/interfaces/ILiquidations.sol\":\"ILiquidations\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/Users/qizhang/Development/truffle_test2/contracts/interfaces/ILiquidations.sol\":{\"keccak256\":\"0x9dd077a68bc390402db175adf60e6196a90b704793728dcabe78e03488857105\",\"urls\":[\"bzz-raw://a589ddace484a570014f118640439d5441de0bc8d248d388f68ff7d8939bb7d0\",\"dweb:/ipfs/QmbozqGkJ8Aauq7nCkz3i7rMpsMaJiueUUZxyESK2idmLh\"]}},\"version\":1}",
+  "bytecode": "0x",
+  "deployedBytecode": "0x",
+  "sourceMap": "",
+  "deployedSourceMap": "",
+  "source": "pragma solidity >=0.4.24;\n\n\ninterface ILiquidations {\n    // Views\n    function isOpenForLiquidation(address account) external view returns (bool);\n\n    function getLiquidationDeadlineForAccount(address account) external view returns (uint);\n\n    function isLiquidationDeadlinePassed(address account) external view returns (bool);\n\n    function liquidationDelay() external view returns (uint);\n\n    function liquidationRatio() external view returns (uint);\n\n    function liquidationPenalty() external view returns (uint);\n\n    function calculateAmountToFixCollateral(\n        uint debtBalance,\n        uint collateral\n    ) external view returns (uint);\n\n    // Mutative Functions\n    function flagAccountForLiquidation(address account) external;\n\n    // Restricted: used internally to Synthetix\n    function removeAccountInLiquidation(address account) external;\n\n    function checkAndRemoveAccountInLiquidation(address account) external;\n}\n",
+  "sourcePath": "/Users/qizhang/Development/truffle_test2/contracts/interfaces/ILiquidations.sol",
+  "ast": {
+    "absolutePath": "/Users/qizhang/Development/truffle_test2/contracts/interfaces/ILiquidations.sol",
+    "exportedSymbols": {
+      "ILiquidations": [
+        20907
+      ]
+    },
+    "id": 20908,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 20846,
+        "literals": [
+          "solidity",
+          ">=",
+          "0.4",
+          ".24"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:25:56"
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "documentation": null,
+        "fullyImplemented": false,
+        "id": 20907,
+        "linearizedBaseContracts": [
+          20907
+        ],
+        "name": "ILiquidations",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "body": null,
+            "documentation": null,
+            "id": 20853,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "isOpenForLiquidation",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 20849,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 20848,
+                  "name": "account",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 20853,
+                  "src": "101:15:56",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 20847,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "101:7:56",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "100:17:56"
+            },
+            "returnParameters": {
+              "id": 20852,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 20851,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 20853,
+                  "src": "141:4:56",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bool",
+                    "typeString": "bool"
+                  },
+                  "typeName": {
+                    "id": 20850,
+                    "name": "bool",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "141:4:56",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "140:6:56"
+            },
+            "scope": 20907,
+            "src": "71:76:56",
+            "stateMutability": "view",
+            "superFunction": null,
+            "visibility": "external"
+          },
+          {
+            "body": null,
+            "documentation": null,
+            "id": 20860,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getLiquidationDeadlineForAccount",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 20856,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 20855,
+                  "name": "account",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 20860,
+                  "src": "195:15:56",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 20854,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "195:7:56",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "194:17:56"
+            },
+            "returnParameters": {
+              "id": 20859,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 20858,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 20860,
+                  "src": "235:4:56",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 20857,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "235:4:56",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "234:6:56"
+            },
+            "scope": 20907,
+            "src": "153:88:56",
+            "stateMutability": "view",
+            "superFunction": null,
+            "visibility": "external"
+          },
+          {
+            "body": null,
+            "documentation": null,
+            "id": 20867,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "isLiquidationDeadlinePassed",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 20863,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 20862,
+                  "name": "account",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 20867,
+                  "src": "284:15:56",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 20861,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "284:7:56",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "283:17:56"
+            },
+            "returnParameters": {
+              "id": 20866,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 20865,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 20867,
+                  "src": "324:4:56",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bool",
+                    "typeString": "bool"
+                  },
+                  "typeName": {
+                    "id": 20864,
+                    "name": "bool",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "324:4:56",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "323:6:56"
+            },
+            "scope": 20907,
+            "src": "247:83:56",
+            "stateMutability": "view",
+            "superFunction": null,
+            "visibility": "external"
+          },
+          {
+            "body": null,
+            "documentation": null,
+            "id": 20872,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "liquidationDelay",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 20868,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "361:2:56"
+            },
+            "returnParameters": {
+              "id": 20871,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 20870,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 20872,
+                  "src": "387:4:56",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 20869,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "387:4:56",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "386:6:56"
+            },
+            "scope": 20907,
+            "src": "336:57:56",
+            "stateMutability": "view",
+            "superFunction": null,
+            "visibility": "external"
+          },
+          {
+            "body": null,
+            "documentation": null,
+            "id": 20877,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "liquidationRatio",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 20873,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "424:2:56"
+            },
+            "returnParameters": {
+              "id": 20876,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 20875,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 20877,
+                  "src": "450:4:56",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 20874,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "450:4:56",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "449:6:56"
+            },
+            "scope": 20907,
+            "src": "399:57:56",
+            "stateMutability": "view",
+            "superFunction": null,
+            "visibility": "external"
+          },
+          {
+            "body": null,
+            "documentation": null,
+            "id": 20882,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "liquidationPenalty",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 20878,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "489:2:56"
+            },
+            "returnParameters": {
+              "id": 20881,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 20880,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 20882,
+                  "src": "515:4:56",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 20879,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "515:4:56",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "514:6:56"
+            },
+            "scope": 20907,
+            "src": "462:59:56",
+            "stateMutability": "view",
+            "superFunction": null,
+            "visibility": "external"
+          },
+          {
+            "body": null,
+            "documentation": null,
+            "id": 20891,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "calculateAmountToFixCollateral",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 20887,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 20884,
+                  "name": "debtBalance",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 20891,
+                  "src": "576:16:56",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 20883,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "576:4:56",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 20886,
+                  "name": "collateral",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 20891,
+                  "src": "602:15:56",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 20885,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "602:4:56",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "566:57:56"
+            },
+            "returnParameters": {
+              "id": 20890,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 20889,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 20891,
+                  "src": "647:4:56",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 20888,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "647:4:56",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "646:6:56"
+            },
+            "scope": 20907,
+            "src": "527:126:56",
+            "stateMutability": "view",
+            "superFunction": null,
+            "visibility": "external"
+          },
+          {
+            "body": null,
+            "documentation": null,
+            "id": 20896,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "flagAccountForLiquidation",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 20894,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 20893,
+                  "name": "account",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 20896,
+                  "src": "720:15:56",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 20892,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "720:7:56",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "719:17:56"
+            },
+            "returnParameters": {
+              "id": 20895,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "745:0:56"
+            },
+            "scope": 20907,
+            "src": "685:61:56",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "external"
+          },
+          {
+            "body": null,
+            "documentation": null,
+            "id": 20901,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "removeAccountInLiquidation",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 20899,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 20898,
+                  "name": "account",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 20901,
+                  "src": "836:15:56",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 20897,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "836:7:56",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "835:17:56"
+            },
+            "returnParameters": {
+              "id": 20900,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "861:0:56"
+            },
+            "scope": 20907,
+            "src": "800:62:56",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "external"
+          },
+          {
+            "body": null,
+            "documentation": null,
+            "id": 20906,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "checkAndRemoveAccountInLiquidation",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 20904,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 20903,
+                  "name": "account",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 20906,
+                  "src": "912:15:56",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 20902,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "912:7:56",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "911:17:56"
+            },
+            "returnParameters": {
+              "id": 20905,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "937:0:56"
+            },
+            "scope": 20907,
+            "src": "868:70:56",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "external"
+          }
+        ],
+        "scope": 20908,
+        "src": "28:912:56"
+      }
+    ],
+    "src": "0:941:56"
+  },
+  "legacyAST": {
+    "absolutePath": "/Users/qizhang/Development/truffle_test2/contracts/interfaces/ILiquidations.sol",
+    "exportedSymbols": {
+      "ILiquidations": [
+        20907
+      ]
+    },
+    "id": 20908,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 20846,
+        "literals": [
+          "solidity",
+          ">=",
+          "0.4",
+          ".24"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:25:56"
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "documentation": null,
+        "fullyImplemented": false,
+        "id": 20907,
+        "linearizedBaseContracts": [
+          20907
+        ],
+        "name": "ILiquidations",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "body": null,
+            "documentation": null,
+            "id": 20853,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "isOpenForLiquidation",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 20849,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 20848,
+                  "name": "account",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 20853,
+                  "src": "101:15:56",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 20847,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "101:7:56",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "100:17:56"
+            },
+            "returnParameters": {
+              "id": 20852,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 20851,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 20853,
+                  "src": "141:4:56",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bool",
+                    "typeString": "bool"
+                  },
+                  "typeName": {
+                    "id": 20850,
+                    "name": "bool",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "141:4:56",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "140:6:56"
+            },
+            "scope": 20907,
+            "src": "71:76:56",
+            "stateMutability": "view",
+            "superFunction": null,
+            "visibility": "external"
+          },
+          {
+            "body": null,
+            "documentation": null,
+            "id": 20860,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getLiquidationDeadlineForAccount",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 20856,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 20855,
+                  "name": "account",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 20860,
+                  "src": "195:15:56",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 20854,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "195:7:56",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "194:17:56"
+            },
+            "returnParameters": {
+              "id": 20859,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 20858,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 20860,
+                  "src": "235:4:56",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 20857,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "235:4:56",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "234:6:56"
+            },
+            "scope": 20907,
+            "src": "153:88:56",
+            "stateMutability": "view",
+            "superFunction": null,
+            "visibility": "external"
+          },
+          {
+            "body": null,
+            "documentation": null,
+            "id": 20867,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "isLiquidationDeadlinePassed",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 20863,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 20862,
+                  "name": "account",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 20867,
+                  "src": "284:15:56",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 20861,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "284:7:56",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "283:17:56"
+            },
+            "returnParameters": {
+              "id": 20866,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 20865,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 20867,
+                  "src": "324:4:56",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bool",
+                    "typeString": "bool"
+                  },
+                  "typeName": {
+                    "id": 20864,
+                    "name": "bool",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "324:4:56",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "323:6:56"
+            },
+            "scope": 20907,
+            "src": "247:83:56",
+            "stateMutability": "view",
+            "superFunction": null,
+            "visibility": "external"
+          },
+          {
+            "body": null,
+            "documentation": null,
+            "id": 20872,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "liquidationDelay",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 20868,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "361:2:56"
+            },
+            "returnParameters": {
+              "id": 20871,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 20870,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 20872,
+                  "src": "387:4:56",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 20869,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "387:4:56",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "386:6:56"
+            },
+            "scope": 20907,
+            "src": "336:57:56",
+            "stateMutability": "view",
+            "superFunction": null,
+            "visibility": "external"
+          },
+          {
+            "body": null,
+            "documentation": null,
+            "id": 20877,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "liquidationRatio",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 20873,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "424:2:56"
+            },
+            "returnParameters": {
+              "id": 20876,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 20875,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 20877,
+                  "src": "450:4:56",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 20874,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "450:4:56",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "449:6:56"
+            },
+            "scope": 20907,
+            "src": "399:57:56",
+            "stateMutability": "view",
+            "superFunction": null,
+            "visibility": "external"
+          },
+          {
+            "body": null,
+            "documentation": null,
+            "id": 20882,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "liquidationPenalty",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 20878,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "489:2:56"
+            },
+            "returnParameters": {
+              "id": 20881,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 20880,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 20882,
+                  "src": "515:4:56",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 20879,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "515:4:56",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "514:6:56"
+            },
+            "scope": 20907,
+            "src": "462:59:56",
+            "stateMutability": "view",
+            "superFunction": null,
+            "visibility": "external"
+          },
+          {
+            "body": null,
+            "documentation": null,
+            "id": 20891,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "calculateAmountToFixCollateral",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 20887,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 20884,
+                  "name": "debtBalance",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 20891,
+                  "src": "576:16:56",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 20883,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "576:4:56",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 20886,
+                  "name": "collateral",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 20891,
+                  "src": "602:15:56",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 20885,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "602:4:56",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "566:57:56"
+            },
+            "returnParameters": {
+              "id": 20890,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 20889,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 20891,
+                  "src": "647:4:56",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 20888,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "647:4:56",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "646:6:56"
+            },
+            "scope": 20907,
+            "src": "527:126:56",
+            "stateMutability": "view",
+            "superFunction": null,
+            "visibility": "external"
+          },
+          {
+            "body": null,
+            "documentation": null,
+            "id": 20896,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "flagAccountForLiquidation",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 20894,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 20893,
+                  "name": "account",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 20896,
+                  "src": "720:15:56",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 20892,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "720:7:56",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "719:17:56"
+            },
+            "returnParameters": {
+              "id": 20895,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "745:0:56"
+            },
+            "scope": 20907,
+            "src": "685:61:56",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "external"
+          },
+          {
+            "body": null,
+            "documentation": null,
+            "id": 20901,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "removeAccountInLiquidation",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 20899,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 20898,
+                  "name": "account",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 20901,
+                  "src": "836:15:56",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 20897,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "836:7:56",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "835:17:56"
+            },
+            "returnParameters": {
+              "id": 20900,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "861:0:56"
+            },
+            "scope": 20907,
+            "src": "800:62:56",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "external"
+          },
+          {
+            "body": null,
+            "documentation": null,
+            "id": 20906,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "checkAndRemoveAccountInLiquidation",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 20904,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 20903,
+                  "name": "account",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 20906,
+                  "src": "912:15:56",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 20902,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "912:7:56",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "911:17:56"
+            },
+            "returnParameters": {
+              "id": 20905,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "937:0:56"
+            },
+            "scope": 20907,
+            "src": "868:70:56",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "external"
+          }
+        ],
+        "scope": 20908,
+        "src": "28:912:56"
+      }
+    ],
+    "src": "0:941:56"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.5.16+commit.9c3226ce.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.2.1",
+  "updatedAt": "2020-07-05T03:58:13.150Z",
+  "devdoc": {
+    "methods": {}
+  },
+  "userdoc": {
+    "methods": {}
+  }
+}
